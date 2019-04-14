@@ -39,7 +39,7 @@ public static int[] styles = {DateFormat.FULL, DateFormat.LONG, DateFormat.MEDIU
         DataFormatter dataFormatter = new DataFormatter();
         Sheet sheet = workbook.getSheetAt(0);
         
-        /*for (Row row: sheet) {
+        for (Row row: sheet) {
         	if(row.getRowNum() == 0) 
         		continue;
         	String dateTimeCase = null;
@@ -63,9 +63,9 @@ public static int[] styles = {DateFormat.FULL, DateFormat.LONG, DateFormat.MEDIU
             	}	
             }
             parseStringAsDate(excelDate, field, dateTimeCase);
-        }*/
+        }
         
-        sheet = workbook.getSheetAt(1);
+        /*sheet = workbook.getSheetAt(1);
         for (Row row: sheet) {
         	System.out.println(row.getRowNum());
         	Date excelDate = null;
@@ -91,7 +91,7 @@ public static int[] styles = {DateFormat.FULL, DateFormat.LONG, DateFormat.MEDIU
         		 }
         	 }
         	 System.out.println(getCombinedDate(excelDate, excelTime));
-        }
+        }*/
 	}
 	
 	/*private static void parseStringAsLocalDateTime(String value) {
